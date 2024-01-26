@@ -1,0 +1,14 @@
+- npm i nodemon -D(restaura el proyecto autimaticamente)
+    package.json:   "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+
+- npm i standar -D, formetea errores de sintaxis
+    package.json: "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+
+- npm i morgan, ver en el log las peticiones al servidor
+- npm i mongoose, es un modulo para conectar y validar peticiones
+    al la db de mongo
+-
