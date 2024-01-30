@@ -2,7 +2,7 @@
     package.json:   "scripts": {
     "dev": "nodemon src/index.js"
   },
-
+- npm run dev : inciar app
 - npm i standar -D, formetea errores de sintaxis
     package.json: "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
