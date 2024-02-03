@@ -11,4 +11,7 @@
 - npm i morgan, ver en el log las peticiones al servidor
 - npm i mongoose, es un modulo para conectar y validar peticiones
     al la db de mongo
--
+
+-bcrypt js, encriptar contraseña
+-jsonwebtoken, genera token para autentificar las credenciales
+  del usuario
