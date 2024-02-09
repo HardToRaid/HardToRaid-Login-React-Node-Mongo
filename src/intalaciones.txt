@@ -15,3 +15,5 @@
 -bcrypt js, encriptar contraseña
 -jsonwebtoken, genera token para autentificar las credenciales
   del usuario
+- cookieParser, es un middleware que transforma la cookie en 
+  json
