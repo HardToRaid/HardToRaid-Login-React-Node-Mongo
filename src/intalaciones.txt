@@ -12,8 +12,8 @@
 - npm i mongoose, es un modulo para conectar y validar peticiones
     al la db de mongo
 
--bcrypt js, encriptar contraseña
--jsonwebtoken, genera token para autentificar las credenciales
+- npm i bcrypt, bcrypt js encriptar contraseña
+- jsonwebtoken, genera token para autentificar las credenciales
   del usuario
-- cookieParser, es un middleware que transforma la cookie en 
+- npm i cookie-parser, es un middleware que transforma la cookie en 
   json
