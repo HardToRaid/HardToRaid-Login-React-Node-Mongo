@@ -17,7 +17,7 @@ export const register = async (req, res) => {
     const token = await createAccesToken({ id: userSaved._id })
     res.cookie('token', token)
     res.json({
-      id: userSaved.id,
+      id: userSaved._id,
       username: userSaved.username,
       email: userSaved.email,
       createdAt: userSaved.createdAt,
@@ -41,7 +41,7 @@ export const login = async (req, res) => {
     const token = await createAccesToken({ id: userFound._id })
     res.cookie('token', token)
     res.json({
-      id: userFound.id,
+      id: userFound._id,
       username: userFound.username,
       email: userFound.email,
       createdAt: userFound.createdAt,
@@ -57,6 +57,15 @@ export const logout = (req, res) => {
   return res.sendStatus(200)
 }
 
-export const profile = (req, res) => {
-  return res.send('profile')
+export const profile = async (req, res) => {
+  const userFound = await User.findById(req.user.id)
+
+  if (!userFound) { return res.status(400).json({ message: 'User no found' }) }
+  return res.json({
+    id: userFound._id,
+    username: userFound.username,
+    email: userFound.email,
+    createdAt: userFound.createdAt,
+    updateAt: userFound.updatedAt
+  })
 }
