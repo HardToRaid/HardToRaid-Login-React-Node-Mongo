@@ -17,3 +17,4 @@
   del usuario
 - cookieParser, es un middleware que transforma la cookie en 
   json
+- npm i zod, para la validacion de datos(especifico)
