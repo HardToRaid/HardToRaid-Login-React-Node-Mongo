@@ -18,3 +18,4 @@
 - cookieParser, es un middleware que transforma la cookie en 
   json
 - npm i zod, para la validacion de datos(especifico)
+- npm i cors, permite que un dominio (origen) solicite y acceda a recursos en otro dominio de manera segura.(frontend con backend)
